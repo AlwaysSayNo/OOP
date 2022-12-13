@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="computer">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="device" maxOccurs="unbounded" minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="name" type="xs:string"/>
+                            <xs:element name="origin" type="xs:string"/>
+                            <xs:element name="price" type="xs:unsignedInt"/>
+                            <xs:element name="critical" type="xs:boolean"/>
+                            <xs:element name="types">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="peripheral" type="xs:boolean"/>
+                                        <xs:element name="energyConsumption" type="xs:unsignedInt"/>
+                                        <xs:element name="cooler" type="xs:boolean"/>
+                                        <xs:element name="type" type="xs:string"/>
+                                        <xs:element name="port" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:unsignedInt" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

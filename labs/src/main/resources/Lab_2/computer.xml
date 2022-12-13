@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<computer>
+    <device id="1">
+        <name>Intel Core i7-10700K</name>
+        <origin>USA</origin>
+        <price>850</price>
+        <critical>true</critical>
+        <types>
+            <peripheral>false</peripheral>
+            <energyConsumption>220</energyConsumption>
+            <cooler>true</cooler>
+            <type>CPU</type>
+            <port>PCI-E</port>
+        </types>
+    </device>
+
+    <device id="2">
+        <name>Nvidia GeForce 1080-TI</name>
+        <origin>USA</origin>
+        <price>900</price>
+        <critical>false</critical>
+        <types>
+            <peripheral>false</peripheral>
+            <energyConsumption>250</energyConsumption>
+            <cooler>true</cooler>
+            <type>GPU</type>
+            <port>PCI-E</port>
+        </types>
+    </device>
+
+    <device id="3">
+        <name>Asus Mouse</name>
+        <origin>Taiwan</origin>
+        <price>50</price>
+        <critical>false</critical>
+        <types>
+            <peripheral>true</peripheral>
+            <energyConsumption>5</energyConsumption>
+            <cooler>false</cooler>
+            <type>IO</type>
+            <port>USB</port>
+        </types>
+    </device>
+</computer>

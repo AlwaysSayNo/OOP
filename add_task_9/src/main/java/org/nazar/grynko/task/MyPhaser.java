@@ -39,7 +39,7 @@ public class MyPhaser {
         arrived++;
         unArrived--;
 
-        if(!CheckTaskFinished()) {
+        while(!CheckTaskFinished()) {
             this.wait();
         }
     }
